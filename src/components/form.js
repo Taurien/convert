@@ -89,7 +89,7 @@ function FormConverter() {
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>{optionB.toUpperCase()}</Form.Label>
-          <Form.Control type="text" value={result} disabled />
+          <Form.Control type="text" value={result? result : 'Try Again' } disabled />
         </Form.Group>
       
         <Button variant="primary" type="submit">
